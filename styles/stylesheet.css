@@ -1,0 +1,58 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  background-color: aliceblue;
+  color: black;
+  font-family: tahoma;
+  text-align: justify;
+  margin: 25px 300px 25px 100px;
+  border-style: solid black;
+}
+div {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightblue;
+    background-clip: padding-box;
+}
+h2,h3,h4,h5 {
+  color: maroon;
+}
+h1 {
+  color: midnightblue;
+  text-align:center;
+}
+img  {
+  border: 3px;
+  border-style: outset;
+  width: 25%;
+}
+li {
+  display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: midnightblue;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: maroon;
+}
+.active {
+    background-color: maroon;
+}
