@@ -6,14 +6,12 @@ body {
   color: black;
   font-family: tahoma;
   text-align: justify;
-  margin: 25px 300px 25px 100px;
-  border-style: solid black;
+  margin: 25px 200px 25px 100px;
+  padding: 10px
 }
-div {
-    border: 10px dotted black;
-    padding: 15px;
-    background: lightblue;
-    background-clip: padding-box;
+p {
+    word-wrap: break-word;
+    word-spacing: 1px;
 }
 h2,h3,h4,h5 {
   color: maroon;
@@ -25,10 +23,13 @@ h1 {
 img  {
   border: 3px;
   border-style: outset;
-  width: 25%;
-}
-li {
-  display: inline;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 ul {
     list-style-type: none;
@@ -40,7 +41,6 @@ ul {
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: white;
@@ -48,11 +48,12 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: maroon;
 }
-.active {
+li a:active {
     background-color: maroon;
+}
+footer {
+  color: white;
 }
