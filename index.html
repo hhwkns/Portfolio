@@ -4,61 +4,52 @@
      <meta charset="utf-8">
      <title>My Portfolio</title>
      <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-        <h1>Welcome to My Site!</h1>
-        <nav>
-            <ul>
+    <div class="page-container">
+      <header>
+        <nav class="nav">
+            <ul class="main-nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="about-me.html">About Me</a></li>
-              <li><a href="lesson-one.html">Lesson One</a></li>
-              <li><a href="class-two.html">Class Two Activity</a></li>
-              <li><a href="page-one.html">Page One</a></li>
-              <li><a href="page-two.html">Page Two</a></li>
-              <li><a href="page-three.html">Page Three</a></li>
+              <li><a href="about-me.html">About</a></li>
+              <li><a href="lesson-one.html">Work</a></li>
+              <li><a href="class-two.html">Contact</a></li>
             </ul>
           </nav>
-
-        <h2>You've reached my portfolio.</h2>
-        <p>This site is a portfolio of work completed by
-           Heather Dileepan in Seattle, WA. Fall, 2018.</p>
+      <div class="header">
+        <h1>Heather H. Dileepan</h1>
+      </div>
     </header>
       <article>
-          <h2>Peruse My Work</h2>
-          <section>
-            <h3>About Me</h3>
-              <figure><img src="Images/about-me.jpg" alt="about me" width="250" height="250"
-              title="Me in Seattle's Gaswork Park last summer">
-             </figure>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-              ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.</p>
-              <p><strong><a href="about-me.html">Read more about me</a></strong></p>
-          </section>
-          <section>
+        <h3 class="article-h3">Peruse my Work</h3>
+        <section class="flex-container">
+          <a href="lesson-one.html" class="box">
             <h3>Lesson One</h3>
-              <figure><img src="Images/assignment-one.jpg" alt="semantics are our friend" width="250"
-              height="197" title="Learning to code is hard. Understanding the structure of a page helps">
-              </figure>
-              <p>This assignment was a short coding activity with the goal of
-              creating a structurally sound page of code.</p>
-              <p><strong><a href="lesson-one.html">
-              View page</a></strong></p>
-          </section>
-          <section>
+            <p>A first attempt</p>
+          </a>
+          <a href="class-two.html" class="box">
             <h3>Class Activity</h3>
-              <figure><img src="Images/class-activity.jpg" alt="we looked at lots of pictures of kittens"
-              width="250" height="166" title="The cutest cat ever naps after a day of being adorable">
-              </figure>
-              <p>The document contained here was an in-class exercise with the goal of
-              finding and linking copyright-accessible images into an html document.</p>
-              <p><strong><a href="class-two.html">
-              View page</a></strong></p>
-         </section>
-      </article>
+            <p>Group work</p>
+          </a>
+          <a href="page-one.html" class="box">
+            <h3>Page One</h3>
+            <p>Content to come</p>
+          </a>
+          <a href="page-two.html" class="box">
+            <h3>Page Two</h3>
+            <p>Content to come</p>
+          </a>
+          <a href="page-three.html" class="box">
+            <h3>Page Three</h3>
+            <p>Content to come</p>
+          </a>
+        </section>
+       </article>
       <aside>
+        <div class="homepage-text">
           <section>
                <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
@@ -72,20 +63,29 @@
                 ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.</p>
-          </section>
-          <section>
-                <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
                 ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.</p>
           </section>
+        </div>
       </aside>
-      <footer>
-        <ul>
-            <li>Copyright 2018</li>
-            <li><a href="mailto:hhwkns@gmail.com">Contact Me</a></li>
-        </ul>
-      </footer>
-    </body>
+        <footer>
+          <div class="footer">
+              <a href="https://www.linkedin.com/in/hdileepan/" class="contact">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/hhwkns" class="contact">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.facebook.com/heather.dileepan" class="contact">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="mailto:hhwkns@gmail.com" class="contact">
+                <i class="fas fa-envelope-square"></i>
+              </a>
+            </div>
+        </footer>
+    </div>
+  </body>
 </html>
