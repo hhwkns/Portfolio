@@ -7,83 +7,107 @@ body {
   padding: 0;
 }
 .page-container {
-  background-color: #F4F4F4;
+  background-color: #E8E8E8;
 }
 .header {
   margin: 2rem;
-  padding: 2rem;
-  font-size: 24px;
-  color: #373737;
+  padding: 1rem;
+  color: #A9A9A9;
   justify-content: center;
-}
-h3, h4, h5 {
-  color: #C0B283;
 }
 .main-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #373737;
+    background-color: white;
+    font-weight: bold;
 }
 li {
     float: left;
 }
 li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: #A9A9A9;
 }
 li a:hover {
-    background-color: #C0B283;
+    background-color: #FF383F;
 }
 li a:active {
-    background-color: #C0B283;
+    background-color: #FF383F;
 }
-a {
-    text-decoration: none;
+h1 {
+  color: #FF383F;
+  font-size: 30px;
 }
-.h2 {
-  padding: 1rem;
-  margin: 2rem;
+#delay {
+  font-size: 20px;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-delay: .5s;
+}
+#delay:hover {
+  font-size: 30px;
 }
 .article-h3 {
   margin: 4rem;
   font-weight: bolder;
   font-size: 20px;
+  background-color: #E8E8E8;
+  color: #A9A9A9;
 }
 .flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 1rem;
+  background-color: #E8E8E8;
 }
 .box {
   padding: 1rem;
-  background-color: #373737;
+  margin: 1rem;
+  background-color: #CAEBF2;
   color: white;
   font-size: 17px;
-  font-weight: 600;
+  box-shadow: 3px 3px 8px #A9A9A9;
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+.box:nth-child(odd) {
+  background-color: #A9A9A9;
+}
+.box:hover {
+      background-color: #FF383F;
+}
+.box:active {
+    background-color: #FF383F;
 }
 .homepage-text {
   margin: 4rem;
-  background-color: #F4F4F4;
+  background-color: #E8E8E8;
+  color: #A9A9A9;
 }
 .footer {
-  background-color: #373737;
+  background-color: #A9A9A9;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 1rem;
-  color: #F4F4F4;
   list-style-type: none;
 }
 .contact {
   padding: 1rem;
-  color: #F4F4F4;
+  color: #CAEBF2;
   list-style-type: none;
+}
+.contact:hover {
+  background-color: #FF383F;
+}
+.contact:active {
+  background-color: #FF383F;
 }
