@@ -111,3 +111,6 @@ h1 {
 .contact:active {
   background-color: #FF383F;
 }
+a:visited {
+  color: black;
+}
