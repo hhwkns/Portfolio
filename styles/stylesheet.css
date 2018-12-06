@@ -6,111 +6,123 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
+/* Homepage content */
 .page-container {
-  background-color: #E8E8E8;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 8% 1fr 1fr 8%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px 5px;
+  border: 1px solid purple;
 }
-.header {
-  margin: 2rem;
-  padding: 1rem;
-  color: #A9A9A9;
-  justify-content: center;
-}
+
 .main-nav {
+    display: flex;
     list-style-type: none;
+    justify-content: flex-start;
+    vertical-align: top;
+    flex-wrap: nowrap;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: white;
     font-weight: bold;
 }
+
 li {
     float: left;
 }
+
 li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: #A9A9A9;
+    color: #3C4038;
 }
+
 li a:hover {
-    background-color: #FF383F;
+    background-color: #B4C7D6;
 }
+
 li a:active {
-    background-color: #FF383F;
+    background-color: #B4C7D6;
 }
-h1 {
-  color: #FF383F;
-  font-size: 30px;
-}
+
 #delay {
   font-size: 20px;
   transition-property: font-size;
   transition-duration: 2s;
   transition-delay: .5s;
 }
+
 #delay:hover {
   font-size: 30px;
 }
-.article-h3 {
-  margin: 4rem;
-  font-weight: bolder;
-  font-size: 20px;
-  background-color: #E8E8E8;
-  color: #A9A9A9;
+
+.hp-container {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 4;
+  background-image: url(../images/heather-in-greece.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #3C4038;
 }
-.flex-container {
+
+.hp-text {
+  margin: 1rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* .flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: #E8E8E8;
+  background-color: white;
+  padding: 0;
 }
 .box {
   padding: 1rem;
   margin: 1rem;
-  background-color: #CAEBF2;
+  background-color: #3C4038;
   color: white;
   font-size: 17px;
-  box-shadow: 3px 3px 8px #A9A9A9;
+  box-shadow: 3px 3px 8px #black;
   flex-basis: 100%;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
 }
-.box:nth-child(odd) {
-  background-color: #A9A9A9;
-}
 .box:hover {
-      background-color: #FF383F;
+      background-color: #B4C7D6;
 }
 .box:active {
-    background-color: #FF383F;
-}
-.homepage-text {
-  margin: 4rem;
-  background-color: #E8E8E8;
-  color: #A9A9A9;
-}
+    background-color: #B4C7D6;
+} */
 .footer {
-  background-color: #A9A9A9;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  grid-row: 4;
+  grid-column: 1 / span 4;
+  background-color: white;
   padding: 1rem;
   list-style-type: none;
 }
+
 .contact {
   padding: 1rem;
-  color: #CAEBF2;
+  color: #3C4038;
   list-style-type: none;
 }
+
 .contact:hover {
-  background-color: #FF383F;
+  background-color: #B4C7D6;
 }
+
 .contact:active {
-  background-color: #FF383F;
-}
-a:visited {
-  color: black;
+  background-color: #B4C7D6;
 }
