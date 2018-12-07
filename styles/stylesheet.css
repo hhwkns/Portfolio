@@ -10,45 +10,62 @@ body {
 /* Homepage content */
 .page-container {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 8% 1fr 1fr 8%;
+  height: 1000px;
+  grid-template-rows: 5% 1fr 1fr 12%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 5px 5px;
   border: 1px solid purple;
 }
-
-.main-nav {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    vertical-align: top;
-    flex-wrap: nowrap;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-weight: bold;
+.head {
+  grid-row: 1 / 1;
+  grid-column: 1 / span 4;
+  background-color: #2F425F;
 }
 
-li {
-    float: left;
+.main-nav a {
+  color: white;
+  text-decoration: none;
+}
+.main-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.main-nav li {
+  display: inline-block;
+  position: relative;
+  /* font-size: 1rem; */
+  text-align: center;
+  padding: .5rem 1rem;
+  color: white;
+}
+.main-nav li:hover {
+  background-color: #B4C7D6;
+  color: #2F425F;
+}
+.main-nav ul.dropdown {
+  display: none;
+  background-color: #B4C7D6;
+}
+.main-nav > ul > li:hover ul.dropdown {
+  display: block;
+  background-color: #B4C7D6;
+  min-width: 10rem;
+  top: 2rem;
+  left: 0;
+  position: absolute;
+}
+.main-nav ul.dropdown li {
+  display: block;
+  width: 100%;
+  padding: .5rem 1rem;
+}
+.main-nav ul.dropdown a {
+  color: white;
+}
+.main-nav ul.dropdown li:hover a {
+  color: #2F425F;
 }
 
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #3C4038;
-}
-
-li a:hover {
-    background-color: #B4C7D6;
-}
-
-li a:active {
-    background-color: #B4C7D6;
-}
-
+/* H: add delays for hover on nav */
 #delay {
   font-size: 20px;
   transition-property: font-size;
@@ -64,65 +81,47 @@ li a:active {
   grid-row: 2 / span 2;
   grid-column: 1 / span 4;
   background-image: url(../Images/heather-in-greece.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-size: contain; */
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: #3C4038;
+  padding: 0 0;
+  margin: 0 0;
 }
 
 .hp-text {
   margin: 1rem;
   text-align: center;
   font-size: 30px;
+  font-weight: bold;
+  color: #2F425F;
 }
 
-/* .flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  background-color: white;
-  padding: 0;
+/* ABOUT PAGE */
+.image {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
 }
-.box {
-  padding: 1rem;
-  margin: 1rem;
-  background-color: #3C4038;
-  color: white;
-  font-size: 17px;
-  box-shadow: 3px 3px 8px #black;
-  flex-basis: 100%;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-}
-.box:hover {
-      background-color: #B4C7D6;
-}
-.box:active {
-    background-color: #B4C7D6;
-} */
+
+/* FOOTER */
 .footer {
   grid-row: 4;
   grid-column: 1 / span 4;
-  background-color: white;
-  padding: 1rem;
+  background-color: #2F425F;
+  padding: 2.5rem;
   list-style-type: none;
 }
 
 .contact {
-  padding: 1rem;
-  color: #3C4038;
+  color: white;
   list-style-type: none;
+  padding: 1.5rem;
 }
 
 .contact:hover {
-  background-color: #B4C7D6;
+  color: #B4C7D6;
 }
 
 .contact:active {
-  background-color: #B4C7D6;
+  color: #B4C7D6;
 }
