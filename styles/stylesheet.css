@@ -14,7 +14,7 @@ body {
   border: 1px solid purple;
   }
 
-/*FORM */
+/*CONTACT */
 .header {
   margin: 1rem;
   font-size: 30px;
@@ -31,14 +31,14 @@ body {
   grid-row: 1 / span 3;
   grid-column: 1 / span 4;
   align-content: center;
-  margin: 1.5rem;
+  margin: 2rem;
 }
 
 label {
   font-size: 17px;
 }
 
-button, input, select, textarea, option {
+input, option, textarea {
   font-family: inherit; font-size: 100%;
   display: block;
   outline: none;
@@ -47,11 +47,15 @@ button, input, select, textarea, option {
   width: 300px;
   }
 
-input:hover {
-  background-color: white;
+  input:hover {
+    background-color: white;
+    }
+
+  input:active {
+    background-color: white;
   }
 
-input:active {
+textarea:hover {
   background-color: white;
 }
 
