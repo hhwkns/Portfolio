@@ -6,15 +6,75 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
-/* Homepage content */
 .page-container {
   display: grid;
   height: 1000px;
   grid-template-rows: 5% 1fr 1fr 12%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   border: 1px solid purple;
+  }
+
+/*FORM */
+.header {
+  margin: 1rem;
+  font-size: 30px;
+  text-align: center;
 }
+
+.header-p {
+  margin: 1rem;
+  text-align: center;
+  font-size: 17px;
+}
+
+.form {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 4;
+  align-content: center;
+  margin: 1.5rem;
+}
+
+label {
+  font-size: 17px;
+}
+
+button, input, select, textarea, option {
+  font-family: inherit; font-size: 100%;
+  display: block;
+  outline: none;
+  margin: 1rem;
+  background-color: #E2E5E7;
+  width: 300px;
+  }
+
+input:hover {
+  background-color: white;
+  }
+
+input:active {
+  background-color: white;
+}
+
+input[type=submit] {
+  border:  2px solid #2F425F;
+  width: 100px;
+  height: 40px;
+  color: white;
+  color: #2F425F;
+  cursor: pointer;
+  }
+
+input[type=submit]:hover {
+  background-color: #2F425F;
+  color: white;
+  }
+
+input[type=submit]:active {
+  background-color: #2F425F;
+  color: white;
+  }
+
+/* Homepage content */
 .head {
   grid-row: 1 / 1;
   grid-column: 1 / span 4;
@@ -45,6 +105,7 @@ body {
   display: none;
   background-color: #B4C7D6;
 }
+
 .main-nav > ul > li:hover ul.dropdown {
   display: block;
   background-color: #B4C7D6;
